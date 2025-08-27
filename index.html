@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?&family=Outfit:wght@100..900&display=swap');
+
+    :root {
+      --white: hsl(0, 0%, 100%);
+
+      --slate-300: hsl(212, 45%, 89%);
+      --slate-500: hsl(216, 15%, 48%);
+      --slate-900: hsl(218, 44%, 22%);
+      --radius: 1rem;
+      --font-size: 15px;
+    }
+
+    @font-face {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      src: url(https://fonts.google.com/specimen/Outfit) format('truetype');
+    }
+
+    body {
+      background-color: var(--slate-300);
+      font-family: 'Outfit', sans-serif;
+      font-size: var(--font-size);
+    }
+
+    .card h1 {
+      color: var(--slate-900);
+      font-size: 1.25rem;
+    }
+
+    .card p {
+      color: var(--slate-500);
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: var(--radius);
+    }
+
+    .card-body {
+      padding: 0 1rem;
+    }
+
+    .card {
+      max-width: 300px;
+      text-align: center;
+      background-color: var(--white);
+      padding: 1rem;
+      border-radius: var(--radius);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1)
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <div class="card">
+      <img src="./images/image-qr-code.png" alt="QR Code">
+      <div class="card-body">
+        <h1>Improve your front-end skills by building projects</h1>
+        <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/nasehqusyairy">Mohammad Nasyikh Al-Qusyairy</a>.
+  </div>
+</body>
+
+</html>
